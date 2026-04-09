@@ -1,0 +1,43 @@
+Suggested steps for implementing PA#2
+• Develop program gradually, one piece at a time.
+• Submit often! Make sure that your output matches the expected output in tests, BEFORE
+you add any more code.
+• Your program must pass at least 1 test case for your program to be graded!
+1. Copy the function prototypes and two functions from instructions into your program.
+Comment out prototypes of functions not yet defined.
+2. In main, set up your menu loop. See menu.cpp for a suggested pattern (but call the
+displayMenu function). Set up your switch to output a statement for each case for now.
+3. If a wrong choice is entered, output: "Please enter 1, 2, 3, 4, or 5: “
+4. Submit for grading and modify your code to pass Tests 1 and 2.
+5. Declare the Result struct
+6. Define the displayDataset function (call displayHeader, etc.)
+7. In main:
+• create an array of Result.
+• initialize it to the first three race results in the dataset (remove before step 10).
+• have a count variable, set to 3.
+• call displayDataset from cases 1 and 2 of the switch, make sure it displays properly.
+(you could skip ahead to step 10 now if you prefer)
+8. Define linearSearchByName
+• call it from case 3 of the switch
+• you will need to input the name from the user using getline(cin, variable). But you will
+need to do cin.ignore, or cin >> ws; before the getline.
+• If it’s working for you, submit for grading to pass Test 7
+9. Define sortByNumber
+• call it from case 1 of the switch
+• If it’s working for you, submit for grading to pass Test 13
+10. Define readDataset function:
+• If you haven’t already, do zybooks problem 9.8 File Input Practice.
+• copy dataset.txt to your directory (if you are working on zeus or eros, transfer the file
+using WinSCP or Filezilla, do NOT copy/paste).
+• in main:
+✦ create an ifstream variable for dataset.txt (include fstream) and open it in main!!
+✦ call readDataset from main before the display (set count to 0 first)
+✦ hint: temporarily output each result from readDataset to find any problems
+✦ ctrl-C if infinite loop.
+• submit for grading. You should be able to pass tests 3, 4, 8, and 9.
+11. implement sortByDistanceTime
+• call it from case 2 of the switch
+• submit for grading to pass Tests 5 and 6
+12. implement binarySearchByNumber
+• call it from case 4 of the switch
+• submit for grading to pass Tests 10, 11, and 12

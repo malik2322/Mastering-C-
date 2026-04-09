@@ -1,0 +1,86 @@
+
+Menu
+
+1. Display Results sorted by bib number
+2. Display Results sorted by distance, then time
+3. Lookup a bib number given a name
+4. Lookup a result by bib number
+5. Quit the Program
+
+Enter your choice: 1
+
+BibNum  Name                 Distance    Time    Avg Spd
+     10 John Smith            122.0    5:40:52     21.5
+     12 Julio Garza            97.6    5:35:00     17.5
+     15 Tom Stanford           91.5    5:36:07     16.3
+     20 Gary Benson           115.9    5:50:40     19.8
+     25 David Myers           103.7    5:53:16     17.6
+     30 Mason Prince           97.6    5:52:21     16.6
+
+Menu
+
+1. Display Results sorted by bib number
+2. Display Results sorted by distance, then time
+3. Lookup a bib number given a name
+4. Lookup a result by bib number
+5. Quit the Program
+
+Enter your choice: 2
+
+BibNum  Name                 Distance    Time    Avg Spd
+     10 John Smith            122.0    5:40:52     21.5
+     20 Gary Benson           115.9    5:50:40     19.8
+     25 David Myers           103.7    5:53:16     17.6
+     12 Julio Garza            97.6    5:35:00     17.5
+     30 Mason Prince           97.6    5:52:21     16.6
+     15 Tom Stanford           91.5    5:36:07     16.3
+
+Menu
+
+1. Display Results sorted by bib number
+2. Display Results sorted by distance, then time
+3. Lookup a bib number given a name
+4. Lookup a result by bib number
+5. Quit the Program
+
+Enter your choice: 3
+Enter name of a racer to look for: Julio Garza
+
+The number of the racer with name Julio Garza is: 12
+
+Menu
+
+1. Display Results sorted by bib number
+2. Display Results sorted by distance, then time
+3. Lookup a bib number given a name
+4. Lookup a result by bib number
+5. Quit the Program
+
+Enter your choice: 4
+Enter number of a racer to look for: 12
+
+     12 Julio Garza            97.6    5:35:00     17.5
+
+Menu
+
+1. Display Results sorted by bib number
+2. Display Results sorted by distance, then time
+3. Lookup a bib number given a name
+4. Lookup a result by bib number
+5. Quit the Program
+
+Enter your choice: 4
+Enter number of a racer to look for: 13
+
+No racer found with number: 13
+
+Menu
+
+1. Display Results sorted by bib number
+2. Display Results sorted by distance, then time
+3. Lookup a bib number given a name
+4. Lookup a result by bib number
+5. Quit the Program
+
+Enter your choice: 5
+Exiting the program...

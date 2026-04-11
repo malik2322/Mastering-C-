@@ -1,72 +1,15 @@
-# =========================
-# 🔹 Compiled Executables
-# =========================
+# executables
 *.exe
 *.out
 *.app
 
-# =========================
-# 🔹 Object Files
-# =========================
+# object files
 *.o
 *.obj
-*.lo
-*.slo
 
-# =========================
-# 🔹 Static & Dynamic Libraries
-# =========================
-*.a
-*.lib
-*.so
-*.dylib
-*.dll
-
-# =========================
-# 🔹 Debug / Build Files
-# =========================
-*.dSYM/
-*.stackdump
-
-# Build directories
+# build folders
 /build/
 /bin/
-/out/
-/Debug/
-/Release/
 
-# CMake
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-
-# =========================
-# 🔹 VS Code
-# =========================
-.vscode/*
-
-# Allow recommended shared settings (optional)
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# =========================
-# 🔹 Logs & Temp Files
-# =========================
-*.log
-*.tmp
-*.temp
-
-# =========================
-# 🔹 OS Files
-# =========================
-.DS_Store
-Thumbs.db
-
-# =========================
-# 🔹 Misc
-# =========================
-*.swp
-*~
+# VS Code
+.vscode/

@@ -2,7 +2,6 @@
 using namespace std;
 
 #include "Stack.h"
-// int size = 10;
 
 Stack::Stack()
 {

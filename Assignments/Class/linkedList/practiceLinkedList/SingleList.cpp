@@ -1,29 +1,36 @@
 
 #include <iostream>
+#include "SingleList.h"
 using namespace std;
 
 // structure of Single list node
-class Node
-{
-public:
-    double data_value;
-    Node *next_node;
+// class Node
+// {
+// public:
+//     double data_value;
+//     Node *next_node;
 
-public:
-    // constructor to initilize a new node with data
-    Node(int data)
-    {
-        this->data_value = data;
-        this->next_node = nullptr;
-    };
-};
+// public:
+//     // constructor to initilize a new node with data
+//     Node(int data)
+//     {
+//         this->data_value = data;
+//         this->next_node = nullptr;
+//     };
+// };
+
+Node::Node(int data)
+{
+    this->data_value = data;
+}
+
 // We will initialize a temporary pointer to the head node of the singly linked list.
 
 // After that, we will check if that pointer is null or not null, if it is null, then return.
 
 // While the pointer is not null, we will access and print the data of the current node, then we move the pointer to next node.
 
-void traverseLinkedList(Node *head)
+void Node::traverseLinkedList(Node *head)
 {
     Node *temp = head;
     while (temp != nullptr)
@@ -45,7 +52,7 @@ void traverseLinkedList(Node *head)
 // Remove the head from the original first node of Linked List
 
 // Make the new node as the Head of the Linked List.
-Node *insertAtFront(Node *head, double x)
+Node *Node::insertAtFront(Node *head, double x)
 {
     Node *new_node = new Node(x);
     new_node->next_node = head;
@@ -60,7 +67,7 @@ Node *insertAtFront(Node *head, double x)
 // Else traverse till the last node
 // Change the next pointer of the last node to point to the new node
 
-Node *insertAtEnd(Node *head, double x)
+Node *Node::insertAtEnd(Node *head, double x)
 {
     Node *new_node = new Node(x);
 
@@ -89,7 +96,7 @@ Node *insertAtEnd(Node *head, double x)
     return head;
 }
 
-Node *deleteAtBeg(Node *head)
+Node *Node::deleteAtBeg(Node *head)
 {
     //  1 -> 2 -> 3 -> 4
     //  head = 2
@@ -103,7 +110,7 @@ Node *deleteAtBeg(Node *head)
     //  2 -> 3 -> 4
 }
 
-Node *insertPos(Node *head, int pos, int val)
+Node *Node::insertPos(Node *head, int pos, int val)
 {
     // int count = 0;
     // Node *current = head;
@@ -120,7 +127,7 @@ Node *insertPos(Node *head, int pos, int val)
 
     Node *curr = head;
 
-    for (int i = 1; i == pos && curr != nullptr; i++)
+    for (int i = 1; i == pos - 1 && curr != nullptr; i++)
     {
         curr = curr->next_node;
     }
@@ -152,7 +159,7 @@ Node *insertPos(Node *head, int pos, int val)
 
     // return head;
 }
-int getSize(Node *head)
+int Node::getSize(Node *head)
 {
     int count = 0;
     Node *current = head;
@@ -165,19 +172,19 @@ int getSize(Node *head)
 
     return count;
 }
-int getMemory(Node *head)
+int Node::getMemory(Node *head)
 {
     int count = getSize(head);
     return count * sizeof(Node);
 }
-void printSection(string title)
+void Node::printSection(string title)
 {
     cout << "\n==============================\n";
     cout << title << endl;
     cout << "==============================\n";
 }
 
-void testLinkedList(Node *head)
+void Node::testLinkedList(Node *head)
 {
     // Node *head = nullptr;
 
@@ -205,23 +212,4 @@ void testLinkedList(Node *head)
 
     printSection("Memory Usage");
     cout << getMemory(head) << " bytes" << endl;
-}
-int main()
-{
-    // creating the first node(head of list)
-    Node *head = new Node(10);
-    //  linking with the second node
-
-    head->next_node = new Node(20);
-
-    //  linking with the third node
-
-    head->next_node->next_node = new Node(30);
-    //  linking with the third node
-
-    head->next_node->next_node->next_node = new Node(40);
-
-    testLinkedList(head);
-
-    return 0;
 }

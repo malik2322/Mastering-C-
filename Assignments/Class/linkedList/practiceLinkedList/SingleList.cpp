@@ -19,11 +19,6 @@ using namespace std;
 //     };
 // };
 
-Node::Node(int data)
-{
-    this->data_value = data;
-}
-
 // We will initialize a temporary pointer to the head node of the singly linked list.
 
 // After that, we will check if that pointer is null or not null, if it is null, then return.
